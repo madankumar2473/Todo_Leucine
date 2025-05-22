@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.stickyHeader {
+    position: fixed;
+    background: #fff;
+}
+
+/* @media screen and (max-width: 1024px) {
+  .hero_wrapper_padding_top {
+    padding-top: 100px;
+  }
+} */
+
+.remove-later {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #0000d2, #a563ff, #01fdb2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+    background: linear-gradient(
+        to bottom,
+        #01fd82 0%,
+        #0000d2 28%,
+        #0000d2 61%,
+        #a563ff 100%
+    );
+}
+@media print {
+    .print:hidden {
+        display: none;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes lightGradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+.slide-down {
+    animation: slideDown 0.9s ease-out forwards;
+}
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 0px;
+            height: 8px;
+          }
+          
+          ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+          }
+          
+          ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+          }
+          
+          ::-webkit-scrollbar-thumb:hover {
+            background: #666;
+          }
+  
+          /* Remove tap highlight on mobile */
+          * {
+            -webkit-tap-highlight-color: transparent;
+          }
+  
+          /* Improve text rendering */
+          body {
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+  
+          /* Focus outline styles */
+          :focus-visible {
+            outline: 2px solid currentColor;
+            outline-offset: 2px;
+          }
+  
+          /* Print styles */
+          @media print {
+            .no-print {
+              display: none !important;
+            }
+            
+            a[href]:after {
+              content: " (" attr(href) ")";
+            }
+          }
+
+         
