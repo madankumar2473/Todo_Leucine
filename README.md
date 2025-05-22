@@ -49,12 +49,12 @@ PORT=5000
 
 **Database Setup**
 1. In Supabase, create a table named Todo with at least these columns:
-    id (UUID or int, primary key)
-    title (text)
-    description (text, optional)
-    completed (boolean, default: false)
-    created_at (timestamp, default: now())
-    updated_at (timestamp, nullable)
+    **id** (UUID or int, primary key)
+    **title** (text)
+    **description** (text, optional)
+    **completed** (boolean, default: false)
+    **created_at** (timestamp, default: now())
+    **updated_at** (timestamp, nullable)
 **   
 Run the Backend**
 ```sh
@@ -62,7 +62,7 @@ npm run dev
 ```
 
 The backend will start on http://localhost:5000
-
+---
 **## 2. Frontend Setup (Todo_Frontend)**
 
 Install Dependencies
@@ -72,63 +72,66 @@ npm install
 ```
 Environment Variables
 
-Create a .env file in Todo_Frontend/ with the following:
-VITE_API_URL=http://localhost:5000/api
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+- Create a .env file in Todo_Frontend/ with the following:
+- VITE_API_URL=http://localhost:5000/api
+- VITE_SUPABASE_URL=your_supabase_url
+- VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-VITE_API_URL should point to your backend API.
-VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are for frontend access if needed.
+- VITE_API_URL should point to your backend API.
+- VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are for frontend access if needed.
 
 **Run the Frontend**
 ```sh
 npm run dev
 ```
-The frontend will start on http://localhost:5173 (default Vite port).
-
+-The frontend will start on http://localhost:5173 (default Vite port).
+---
 **3. Usage**
 
-Open http://localhost:5173 in your browser.
-Add, edit, complete, or delete to-dos.
-Click "Generate & Send to Slack" to get an AI-generated summary of your pending todos and send it to your Slack channel.
-
+- Open http://localhost:5173 in your browser.
+- Add, edit, complete, or delete to-dos.
+- Click "Generate & Send to Slack" to get an AI-generated summary of your pending todos and send it to your Slack channel.
+---
 ##4. Dependencies
 
-Backend
-Express - Web server
-cors - CORS middleware
-dotenv - Environment variable loader
-@supabase/supabase-js - Supabase client
-@google/generative-ai - Google Gemini API client
-@slack/webhook - Slack webhook integration
-pg - PostgreSQL client (for Supabase)
-nodemon - Dev server auto-reload (dev only)
-Frontend
-react, react-dom - UI library
-react-router-dom - Routing
-axios - HTTP client
-react-toastify - Toast notifications
-@supabase/supabase-js - (optional, for direct Supabase access)
-@google/generative-ai - (optional, for Gemini API)
-Vite - Build tool
-
+- Backend
+- **Express** - Web server
+- **cors** - CORS middleware
+- **dotenv** - Environment variable loader
+- **@supabase/supabase-js** - Supabase client
+-** @google/generative-ai** - Google Gemini API client
+- **@slack/webhook** - Slack webhook integration
+- **pg** - PostgreSQL client (for Supabase)
+- **nodemon** - Dev server auto-reload (dev only)
+- Frontend
+- **react, react-dom** - UI library
+- **react-router-dom** - Routing
+- **axios** - HTTP client
+- **react-toastify** - Toast notifications
+- **@supabase/supabase-js** - (optional, for direct Supabase access)
+- **@google/generative-ai** - (optional, for Gemini API)
+- **Vite** - Build tool
+---
 **5. Testing**
 
-The backend includes a sample test script at src/Testcases/TestModel.js for CRUD operations.
+- The backend includes a sample test script at src/Testcases/TestModel.js for CRUD operations.
 Run with:
+```sh
 node src/Testcases/TestModel.js
-
+```
+---
 **6. Troubleshooting**
 
-Ensure all environment variables are set correctly.
-Make sure your Supabase table name matches the code (Todo).
-Check the CORS settings if you have issues connecting the frontend and backend.
-For Gemini API or Slack errors, check your API keys and webhook URLs.
-
+- Ensure all environment variables are set correctly.
+- Make sure your Supabase table name matches the code (Todo).
+- Check the CORS settings if you have issues connecting the frontend and backend.
+- For Gemini API or Slack errors, check your API keys and webhook URLs.
+---
 **7. Credits**
 
-React
-Vite
-Supabase
-Google Gemini
-Slack
+- React
+- Vite
+- Supabase
+- Google Gemini
+- Slack
+---
