@@ -87,11 +87,13 @@ npm run dev
 The frontend will start on http://localhost:5173 (default Vite port).
 
 **3. Usage**
+
 Open http://localhost:5173 in your browser.
 Add, edit, complete, or delete to-dos.
 Click "Generate & Send to Slack" to get an AI-generated summary of your pending todos and send it to your Slack channel.
 
-**4. Dependencies
+##4. Dependencies
+
 Backend
 Express - Web server
 cors - CORS middleware
@@ -111,17 +113,20 @@ react-toastify - Toast notifications
 Vite - Build tool
 
 **5. Testing**
+
 The backend includes a sample test script at src/Testcases/TestModel.js for CRUD operations.
 Run with:
 node src/Testcases/TestModel.js
 
 **6. Troubleshooting**
+
 Ensure all environment variables are set correctly.
 Make sure your Supabase table name matches the code (Todo).
 Check the CORS settings if you have issues connecting the frontend and backend.
 For Gemini API or Slack errors, check your API keys and webhook URLs.
 
-7. Credits
+**7. Credits**
+
 React
 Vite
 Supabase
