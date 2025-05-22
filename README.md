@@ -2,6 +2,7 @@
 
 A full-stack Todo application with AI-powered summary generation and Slack integration. Built with React (Vite) for the frontend and Node.js (Express) with Supabase and Google Gemini for the backend.
 
+# Application is deployed at this URL address - https://todoaipowered.netlify.app/
 ---
 
 ## Features
