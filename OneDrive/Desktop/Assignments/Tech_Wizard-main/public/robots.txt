@@ -1,6 +1,0 @@
-User-agent: *
-
-
-Allow: /
-
-Sitemap: https://channelblend.in/sitemap.xml
